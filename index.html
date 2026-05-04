@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Tic Tac Toe | Premium Edition</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="game-canvas"></canvas>
+
+        <!-- UI Overlays -->
+        <div id="ui-container">
+            <!-- Main Menu -->
+            <section id="main-menu" class="glass-panel active">
+                <h1 class="title">TIC TAC TOE <span class="badge-3d">3D</span></h1>
+                <div class="menu-actions">
+                    <button id="btn-pvp" class="btn-primary">PLAY VS PLAYER</button>
+                    <button id="btn-pva" class="btn-primary">PLAY VS AI</button>
+                    
+                    <div class="difficulty-selector hidden">
+                        <label>AI DIFFICULTY</label>
+                        <div class="diff-options">
+                            <button data-diff="easy" class="btn-secondary">EASY</button>
+                            <button data-diff="medium" class="btn-secondary active">MEDIUM</button>
+                            <button data-diff="hard" class="btn-secondary">HARD</button>
+                        </div>
+                    </div>
+
+                    <button id="btn-settings" class="btn-secondary">SETTINGS</button>
+                </div>
+            </section>
+
+            <!-- Settings Menu -->
+            <section id="settings-menu" class="glass-panel hidden">
+                <h2>SETTINGS</h2>
+                <div class="setting-item">
+                    <span>SOUND</span>
+                    <button id="toggle-sound" class="toggle-btn on">ON</button>
+                </div>
+                <div class="setting-item">
+                    <span>THEME</span>
+                    <select id="theme-select">
+                        <option value="neon">NEON CYBER</option>
+                        <option value="minimal">MINIMAL</option>
+                        <option value="space">SPACE</option>
+                    </select>
+                </div>
+                <button id="btn-back" class="btn-secondary">BACK</button>
+            </section>
+
+            <!-- Game HUD -->
+            <section id="game-hud" class="hidden">
+                <div class="hud-top">
+                    <div class="player-info player-x active">
+                        <span class="label">PLAYER X</span>
+                        <span class="score" id="score-x">0</span>
+                    </div>
+                    <div class="turn-indicator">VS</div>
+                    <div class="player-info player-o">
+                        <span class="label">PLAYER O</span>
+                        <span class="score" id="score-o">0</span>
+                    </div>
+                </div>
+                <div class="hud-bottom">
+                    <button id="btn-undo" class="btn-icon" title="Undo Move">↩</button>
+                    <button id="btn-reset" class="btn-icon" title="Reset Match">⟳</button>
+                    <button id="btn-photo" class="btn-icon" title="Photo Mode">📷</button>
+                    <button id="btn-quit" class="btn-icon" title="Quit to Menu">✕</button>
+                </div>
+            </section>
+
+            <!-- End Screen -->
+            <section id="end-screen" class="glass-panel hidden">
+                <h2 id="result-text">VICTORY!</h2>
+                <div class="end-actions">
+                    <button id="btn-replay" class="btn-primary">REPLAY MATCH</button>
+                    <button id="btn-next" class="btn-primary">NEW GAME</button>
+                    <button id="btn-menu" class="btn-secondary">MAIN MENU</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
