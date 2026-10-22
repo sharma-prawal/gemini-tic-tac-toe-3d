@@ -1,5 +1,14 @@
 # 3D Tic Tac Toe | Premium Edition
 
+> Polished 3D tic-tac-toe in Three.js with player-vs-player and player-vs-AI modes.
+
+<p align="center">
+  <img src="docs/screenshots/desktop.jpg" width="38%" alt="Screenshot" />
+  <img src="docs/screenshots/inside.jpg" width="38%" alt="Screenshot" />
+  <img src="docs/screenshots/mobile.jpg" width="18%" alt="Screenshot" />
+</p>
+
+
 A modern, polished, and visually immersive 3D Tic Tac Toe game built with **Three.js**, **GSAP**, and **TypeScript**.
 
 ## Features
