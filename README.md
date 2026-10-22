@@ -60,3 +60,7 @@ A modern, polished, and visually immersive 3D Tic Tac Toe game built with **Thre
 
 ## Credits
 Built with ❤️ for a premium gaming experience.
+
+## License
+
+Released under the [MIT License](LICENSE).
