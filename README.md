@@ -2,6 +2,8 @@
 
 > Polished 3D tic-tac-toe in Three.js with player-vs-player and player-vs-AI modes.
 
+**Live:** [gemini-tic-tac-toe-3d.vercel.app](https://gemini-tic-tac-toe-3d.vercel.app)
+
 <p align="center">
   <img src="docs/screenshots/desktop.jpg" width="38%" alt="Screenshot" />
   <img src="docs/screenshots/inside.jpg" width="38%" alt="Screenshot" />
